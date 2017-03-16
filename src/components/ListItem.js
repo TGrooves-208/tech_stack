@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Text,
-  TouchableWithoutFeeback,
+  TouchableWithoutFeedback,
   View,
   LayoutAnimation
 } from 'react-native';
@@ -33,7 +33,7 @@ class ListItem extends Component {
     const { id, title } = this.props.library;
 
     return (
-      <TouchableWithoutFeeback
+      <TouchableWithoutFeedback
         onPress={() => this.props.selectLibrary(id)}
       >
         <View>
@@ -44,7 +44,7 @@ class ListItem extends Component {
           </CardSection>
           {this.renderDescription()}
         </View>
-      </TouchableWithoutFeeback>
+      </TouchableWithoutFeedback>
     );
   }
 }
